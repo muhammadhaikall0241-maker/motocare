@@ -1,0 +1,33 @@
+MOTOCARE PREMIUM REDESIGN
+========================
+
+Isi paket:
+- resources/views/layouts/app.blade.php
+- resources/views/dashboard.blade.php
+- resources/views/panel/index.blade.php
+- resources/views/panel/form.blade.php
+
+CARA MEMASANG (PowerShell):
+1. Pastikan terminal berada di C:\xampp_new\htdocs\motocare
+2. Buat backup file tampilan lama:
+   Copy-Item resources/views/layouts/app.blade.php resources/views/layouts/app.blade.php.backup
+   Copy-Item resources/views/dashboard.blade.php resources/views/dashboard.blade.php.backup
+   Copy-Item resources/views/panel/index.blade.php resources/views/panel/index.blade.php.backup
+   Copy-Item resources/views/panel/form.blade.php resources/views/panel/form.blade.php.backup
+
+3. Ekstrak ZIP ini. Salin folder resources ke:
+   C:\xampp_new\htdocs\motocare\
+   Pilih Replace/Overwrite jika diminta.
+
+4. Jalankan:
+   php artisan view:clear
+   php artisan optimize:clear
+
+5. Buka http://127.0.0.1:8000 atau alamat lokal yang biasa digunakan.
+
+CATATAN:
+- Tidak ada migration atau perubahan database dalam paket ini.
+- PanelController, model, API, dan routes tidak diubah.
+- Foto menggunakan URL gambar Unsplash sehingga memerlukan koneksi internet.
+- Ini adalah pembaruan tampilan; autentikasi admin dan hardening produksi belum termasuk.
+- Bila ada masalah, pulihkan file .backup yang dibuat pada langkah 2.

@@ -1,0 +1,29 @@
+PAKET WEBSITE MOToCARE - LARAVEL
+
+ISI:
+- routes/web.php
+- app/Http/Controllers/PanelController.php
+- resources/views/layouts/app.blade.php
+- resources/views/dashboard.blade.php
+- resources/views/panel/index.blade.php
+- resources/views/panel/form.blade.php
+
+CARA MEMASANG:
+1. Pastikan MySQL di XAMPP dalam keadaan Running.
+2. Ekstrak seluruh isi ZIP ke folder:
+   C:\xampp_new\htdocs\motocare
+   Pilih Replace/Overwrite jika Windows meminta konfirmasi untuk routes/web.php.
+   File baru akan masuk ke folder yang sesuai.
+3. Buka PowerShell di:
+   C:\xampp_new\htdocs\motocare
+4. Jalankan:
+   php artisan optimize:clear
+   php artisan route:list
+5. Jalankan atau gunakan Apache XAMPP, lalu buka:
+   http://localhost/motocare/public
+
+CATATAN:
+- Paket ini memakai tabel dan kolom yang sudah ada; tidak menjalankan migration.
+- API routes/api.php dan controller API yang sudah ada tidak diganti.
+- Dashboard/admin ini belum memakai login. Gunakan hanya untuk demo lokal sampai autentikasi admin ditambahkan.
+- Hapus data dapat ditolak database jika data tersebut masih dipakai oleh tabel lain.

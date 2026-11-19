@@ -1,8 +1,3 @@
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# MOTOCARE — Sistem Manajemen Servis Sepeda Motor
-
 **Aplikasi Manajemen Bengkel Berbasis Web dan REST API**
 
 MotoCare merupakan aplikasi manajemen bengkel sepeda motor berbasis web yang dikembangkan menggunakan Laravel dan MySQL. Aplikasi ini dirancang untuk membantu proses administrasi dan pengelolaan operasional bengkel secara terstruktur, mulai dari pendataan pelanggan, kendaraan, pendaftaran servis, detail pengerjaan servis, hingga pembayaran.
